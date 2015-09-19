@@ -1,2 +1,2 @@
-# PostGen
-Markdown file generator for website news posts/events.
+# CSSSU PostGen
+Markdown file generator for [CSSU website](github/cssu/cssu.ca) news posts/events.
