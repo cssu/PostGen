@@ -57,7 +57,10 @@ var downloadFile = function (filename, text) {
 };
 
 document.getElementById('post_download').addEventListener('click', function () {
-    var filename = elDate.value + '-' + elTitle.value.split(' ').join('-') + '.md';
+    var filename = elDate.value.split(' ')[0]
+        + '-'
+        + elTitle.value.split(' ').join('-')
+        + '.md';
 
     downloadFile(filename, elPreview.value);
 });
