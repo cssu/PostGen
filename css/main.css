@@ -36,17 +36,25 @@
     padding: 0;
 }
 
+::selection {
+    background-color: #d5d5d5;
+}
+
 html {
     background: #0d1117;
     color: #fff;
     font: 14px/1.5 'Open Sans';
 }
 
+h1 {
+    font-weight: normal;
+}
+
 .wrap {
-  margin: 0 auto;
-  max-width: 2000px;
-  padding: 0 30px;
-  width: 85%;
+    margin: 0 auto;
+    max-width: 2000px;
+    padding: 0 30px;
+    width: 85%;
 }
 
 .header {
@@ -62,9 +70,10 @@ html {
     font-size: 46px;
     line-height: 56px;
     letter-spacing: 4px;
+    margin-bottom: 1rem;
 }
 
-label {
+.form_label {
     display: block;
     margin: 2em 0 1em;
 }
@@ -78,6 +87,10 @@ textarea {
     width: 100%;
 }
 
+input {
+    font: inherit;
+}
+
 .button {
     background: none;
     border-radius: 3px;
@@ -88,13 +101,27 @@ textarea {
     font: inherit;
     margin-top: 1em;
     padding: 0.5em 1em;
+    transition: all 0.3s;
     width: auto;
 }
+
+    .button:hover {
+        background: #fff;
+        color: #000;
+    }
 
 input[type='radio'] {
     display: inline-block;
     width: auto;
 }
+
+    .form_radio {
+        margin-right: 1.5em;
+    }
+
+        .form_radio input {
+            margin-right: 0.25em;
+        }
 
 textarea {
     height: 200px;
@@ -103,6 +130,10 @@ textarea {
 .post_form {
     background: #242424;
     padding: 1.5em;
+}
+
+#form_content h2 {
+    margin: 2em 0 1em;
 }
 
 .preview {

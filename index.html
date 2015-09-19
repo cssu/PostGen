@@ -16,48 +16,53 @@
     </header>
 
     <form class="post_form">
-        <label>Post type</label>
-        <label for="post_type_news">
+        <h2>Post metadata</h2>
+
+        <label class="form_label">Post type</label>
+        <label for="post_type_news" class="form_radio">
             <input type="radio" id="post_type_news" name="post_type" checked>
             News
         </label>
-        <label for="post_type_events">
+        <label for="post_type_events" class="form_radio">
             <input type="radio" id="post_type_events" name="post_type">
             Event
         </label>
 
-        <label>Post title</label>
+        <label class="form_label">Post title</label>
         <input type="text" id="post_title" placeholder="Post title">
 
         <div id="post_news_author">
-            <label>Author</label>
+            <label class="form_label">Author</label>
             <input type="text" id="post_author" placeholder="Author">
         </div>
 
         <div id="post_event_description">
-            <label>Short description</label>
+            <label class="form_label">Short description</label>
             <input type="text" id="post_description" placeholder="Short description">
         </div>
 
-        <label>Date (YYYY-MM-DD HH:mm)</label>
+        <label class="form_label">Date (YYYY-MM-DD HH:mm)</label>
         <input type="text" id="post_date" placeholder="Date">
 
         <div id="post_event_expiry">
-            <label>Expiry date (YYYY-MM-DD HH:mm)</label>
+            <label class="form_label">Expiry date (YYYY-MM-DD HH:mm)</label>
             <input type="text" id="post_expiry" placeholder="Expiry date">
         </div>
 
-        <label>Tags (separate by space)</label>
+        <label class="form_label">Tags (separate with spaces)</label>
         <input type="text" id="post_tags" placeholder="Tags (space-separated)">
 
-        <label>Post content (Markdown)</label>
-        <textarea id="post_content" placeholder="Post content"></textarea>
+        <div id="form_content">
+            <h2>Post content (Markdown)</h2>
+
+            <textarea id="post_content" placeholder="Post content"></textarea>
+        </div>
 
         <input type="submit" id="post_generate" class="button" value="Generate">
     </form>
 
     <section class="preview">
-        <label>Preview</label>
+        <label class="form_label">Preview</label>
         <textarea id="post_preview" disabled></textarea>
 
         <input type="button" id="post_download" class="button" value="Download Markdown file">
