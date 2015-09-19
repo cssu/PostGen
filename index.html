@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+
+    <title>CSSU PostGen</title>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="wrap">
+    <header class="header">
+        <h1 class="header__logo">CSSU PostGen</h1>
+
+        <p>Web tool for generating Markdown files for news and events posts for the <a href="https://cssu.ca/">CSSU website</a>.</p>
+    </header>
+
+    <form class="post_form">
+        <label>Post type</label>
+        <label for="post_type_news">
+            <input type="radio" id="post_type_news" name="post_type" checked>
+            News
+        </label>
+        <label for="post_type_events">
+            <input type="radio" id="post_type_events" name="post_type">
+            Event
+        </label>
+
+        <label>Post title</label>
+        <input type="text" id="post_title" placeholder="Post title">
+
+        <div id="post_news_author">
+            <label>Author</label>
+            <input type="text" id="post_author" placeholder="Author">
+        </div>
+
+        <div id="post_event_description">
+            <label>Short description</label>
+            <input type="text" id="post_description" placeholder="Short description">
+        </div>
+
+        <label>Date (YYYY-MM-DD HH:mm)</label>
+        <input type="text" id="post_date" placeholder="Date">
+
+        <div id="post_event_expiry">
+            <label>Expiry date (YYYY-MM-DD HH:mm)</label>
+            <input type="text" id="post_expiry" placeholder="Expiry date">
+        </div>
+
+        <label>Tags (separate by space)</label>
+        <input type="text" id="post_tags" placeholder="Tags (space-separated)">
+
+        <label>Post content (Markdown)</label>
+        <textarea id="post_content" placeholder="Post content"></textarea>
+
+        <input type="submit" id="post_generate" class="button" value="Generate">
+    </form>
+
+    <section class="preview">
+        <label>Preview</label>
+        <textarea id="post_preview" disabled></textarea>
+
+        <input type="button" id="post_download" class="button" value="Download Markdown file">
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

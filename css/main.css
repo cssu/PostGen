@@ -1,0 +1,110 @@
+@font-face {
+  font-family: 'Nexa Light';
+  src: local('Nexa Light'),
+       local('Nexa-Light'),
+       url('../fonts/NexaLight.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  src: local('OpenSans Regular'),
+       local('OpenSans-Regular'),
+       url('../fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  src: local('OpenSans Light'),
+       local('OpenSans-Light'),
+       url('../fonts/OpenSans-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  src: local('OpenSans Semibold'),
+       local('OpenSans-Semibold'),
+       url('../fonts/OpenSans-Semibold.ttf') format('truetype');
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: #0d1117;
+    color: #fff;
+    font: 14px/1.5 'Open Sans';
+}
+
+.wrap {
+  margin: 0 auto;
+  max-width: 2000px;
+  padding: 0 30px;
+  width: 85%;
+}
+
+.header {
+    padding: 3em 1.5em;
+}
+
+    .header a {
+        color: #fff;
+    }
+
+.header__logo {
+    font-family: 'Nexa Light';
+    font-size: 46px;
+    line-height: 56px;
+    letter-spacing: 4px;
+}
+
+label {
+    display: block;
+    margin: 2em 0 1em;
+}
+
+input,
+textarea {
+    background: #fff;
+    border: 0;
+    border-radius: 3px;
+    padding: 0.5em;
+    width: 100%;
+}
+
+.button {
+    background: none;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font: inherit;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    width: auto;
+}
+
+input[type='radio'] {
+    display: inline-block;
+    width: auto;
+}
+
+textarea {
+    height: 200px;
+}
+
+.post_form {
+    background: #242424;
+    padding: 1.5em;
+}
+
+.preview {
+    padding: 1.5em;
+}
